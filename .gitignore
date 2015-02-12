@@ -10,3 +10,7 @@ doc/
 pkg/
 .bundle/
 *.sublime-*
+target/
+.classpath
+.project
+.settings/
