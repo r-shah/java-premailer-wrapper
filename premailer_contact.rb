@@ -1,9 +1,10 @@
 require "java"
 
+$CLASSPATH << 'target/classes';
+java_import "com.msiops.premailer.PremailerInterface"
 
 class PremailerContact
   include PremailerInterface
-
 
 
   def initialize
@@ -11,7 +12,7 @@ class PremailerContact
 
 
   def test_method
-  	puts "Hello from Ruby"
+    return "Hello from Ruby"
   end
 
 end
