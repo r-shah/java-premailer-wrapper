@@ -29,7 +29,11 @@
 # puts premailer.to_inline_css
 # ```
 #
-require 'premailer/version'
+#require 'premailer/version'
+require File.expand_path(File.dirname(__FILE__)) + '/version'
+require File.expand_path(File.dirname(__FILE__)) + '/html_to_plain_text'
+require File.expand_path(File.dirname(__FILE__)) + '/adapter'
+require 'css_parser'
 
 class Premailer
   include HtmlToPlainText

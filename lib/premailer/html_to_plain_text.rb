@@ -1,4 +1,7 @@
 # coding: utf-8
+require "java"
+#$CLASSPATH << 'target/rubygems/gems/htmlentities-4.3.3/lib';
+
 require 'htmlentities'
 
 # Support functions for Premailer
