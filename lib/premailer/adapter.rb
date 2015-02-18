@@ -1,4 +1,4 @@
-
+require File.expand_path(File.dirname(__FILE__)) + '/adapter/nokogiri'
 
 class Premailer
   # Manages the adapter classes. Currently supports:

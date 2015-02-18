@@ -12,7 +12,7 @@ class PremailerContact
   def initialize
   end
 
-  def premailer_init(html, options)
+  def init(html, options)
 
     options.keys.each do |key|
       options[(key.to_sym rescue key) || key] = options.delete(key)
@@ -20,19 +20,17 @@ class PremailerContact
 
     @defaultOption = {:adapter => :nokogiri, :input_encoding => 'UTF-8', }
 
-    puts options.merge(@defaultOption)
-
     @pr = Premailer.new(html, options.merge(@defaultOption))
   end
 
 
-  def premailer_inline_css
+  def inline_css
 
     return @pr.to_inline_css
   end
 
 
-  def premailer_plain_text
+  def plain_text
 
     return @pr.to_plain_text
   end
